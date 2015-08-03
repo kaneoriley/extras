@@ -129,6 +129,8 @@ abstract class CorePlugin implements Plugin<Project> {
 
         context.dependencies {
             compile context.fileTree(dir: 'libs', include: '*.jar')
+            apt 'com.nextfaze:goudaknife-compiler:7.0.2-SNAPSHOT'
+            compile 'com.nextfaze:goudaknife:7.0.2-SNAPSHOT'
             provided 'org.projectlombok:lombok:1.16.4'
         }
 

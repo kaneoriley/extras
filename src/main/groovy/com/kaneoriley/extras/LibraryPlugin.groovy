@@ -30,6 +30,14 @@ class LibraryPlugin extends CorePlugin {
         applySettings(project)
 
         super.apply(project)
+
+        project.apt {
+            arguments {
+                goudaPackageName project.libraryId
+                goudaPrivateFields 'true'
+                goudaVerboseOutput 'true'
+            }
+        }
     }
 
     @SuppressWarnings("GroovyUnusedDeclaration")

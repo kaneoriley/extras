@@ -50,6 +50,14 @@ class ApplicationPlugin extends CorePlugin {
             }
         }
         super.apply(project)
+
+        project.apt {
+            arguments {
+                goudaPackageName project.android.defaultConfig.applicationId
+                goudaPrivateFields 'true'
+                goudaVerboseOutput 'true'
+            }
+        }
     }
 
     @SuppressWarnings("GroovyUnusedDeclaration")
