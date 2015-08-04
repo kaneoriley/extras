@@ -55,7 +55,6 @@ class ApplicationPlugin extends CorePlugin {
             arguments {
                 goudaPackageName project.android.defaultConfig.applicationId
                 goudaPrivateFields 'true'
-                goudaVerboseOutput 'true'
             }
         }
     }

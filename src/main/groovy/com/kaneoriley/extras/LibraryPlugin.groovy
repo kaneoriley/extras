@@ -33,9 +33,8 @@ class LibraryPlugin extends CorePlugin {
 
         project.apt {
             arguments {
-                goudaPackageName project.libraryId
+                goudaManifestFile variant.outputs[0].processResources.manifestFile
                 goudaPrivateFields 'true'
-                goudaVerboseOutput 'true'
             }
         }
     }
