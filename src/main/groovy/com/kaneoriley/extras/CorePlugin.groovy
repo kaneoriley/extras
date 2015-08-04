@@ -107,7 +107,8 @@ abstract class CorePlugin implements Plugin<Project> {
                 minSdkVersion 19
                 targetSdkVersion 22
 
-                manifestPlaceholders += [ manifestApplicationId: "${context.projectApplicationId}" ]
+                manifestPlaceholders += [ manifestApplicationId: "${context.extraApplicationId}" ]
+                manifestPlaceholders += [ fabricApiKey: "${context.extraFabricApiKey}" ]
 
                 versionCode = getDate().toInteger()
                 signingConfig signingConfigs.global

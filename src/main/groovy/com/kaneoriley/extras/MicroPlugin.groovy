@@ -36,8 +36,8 @@ class MicroPlugin extends CorePlugin {
         context.android {
             defaultConfig {
                 minSdkVersion 21
-                applicationId context.baseApplicationId
-                versionName context.baseVersionName
+                applicationId context.extraApplicationId
+                versionName context.extraVersionName
             }
         }
 

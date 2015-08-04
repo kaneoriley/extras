@@ -44,8 +44,8 @@ class LibraryPlugin extends CorePlugin {
 
         context.android {
             defaultConfig {
-                buildConfigField 'String', 'APP_PACKAGE_NAME', "\"${context.projectApplicationId}\""
-                buildConfigField 'String', 'APP_DISPLAY_NAME', "\"${context.projectApplicationName}\""
+                buildConfigField 'String', 'APP_PACKAGE_NAME', "\"${context.extraApplicationId}\""
+                buildConfigField 'String', 'APP_DISPLAY_NAME', "\"${context.extraDisplayName}\""
             }
         }
 

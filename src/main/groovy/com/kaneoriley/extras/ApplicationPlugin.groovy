@@ -64,8 +64,8 @@ class ApplicationPlugin extends CorePlugin {
 
         context.android {
             defaultConfig {
-                applicationId context.baseApplicationId
-                versionName context.baseVersionName
+                applicationId context.extraApplicationId
+                versionName context.extraVersionName
             }
         }
 
