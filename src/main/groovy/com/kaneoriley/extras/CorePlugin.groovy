@@ -85,7 +85,7 @@ abstract class CorePlugin implements Plugin<Project> {
     @SuppressWarnings("GroovyUnusedDeclaration")
     static def applySettings(context) {
 
-        context.apply plugin: 'com.jakewharton.hugo'
+        context.apply plugin: 'com.kaneoriley.hugo'
         context.apply plugin: 'android-apt'
         context.apply plugin: 'me.tatarka.retrolambda'
 
